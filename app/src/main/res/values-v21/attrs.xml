@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="AutofitTextView">
+        <!-- Minimum size of the text. -->
+        <attr name="minTextSize" format="dimension" />
+        <!-- Amount of precision used to calculate the correct text size to fit within its
+        bounds. Lower precision is more precise and takes more time. -->
+        <attr name="precision" format="float" />
+        <!-- Defines whether to automatically resize text to fit to the view's bounds. -->
+        <attr name="sizeToFit" format="boolean" />
+    </declare-styleable>
+
+
+    <declare-styleable name="CircularImageView">
+        <attr name="border" format="boolean"></attr>
+        <attr name="border_width" format="dimension"></attr>
+        <attr name="border_color" format="color"></attr>
+        <attr name="shadow" format="boolean"></attr>
+    </declare-styleable>
+
+    <declare-styleable name="Theme">
+        <attr name="circularImageViewStyle" format="reference"></attr>
+    </declare-styleable>
+
+
+    <declare-styleable name="FancyCoverFlow">
+        <attr name="unselectedAlpha" format="float" />
+        <attr name="unselectedSaturation" format="float" />
+        <attr name="unselectedScale" format="float" />
+        <attr name="maxRotation" format="integer" />
+        <attr name="scaleDownGravity" format="float" />
+        <attr name="actionDistance" format="integer">
+            <enum name="auto" value="2147483647" />
+        </attr>
+    </declare-styleable>
+
+
+
+    <declare-styleable name="RecyclerViewPager">
+        <attr name="rvp_triggerOffset" format="float" />
+        <attr name="rvp_flingFactor" format="float" />
+        <attr name="rvp_singlePageFling" format="boolean" />
+    </declare-styleable>
+
+
+    <declare-styleable name="ViewAnimatorHorizontal">
+        <!-- Identifier for the animation to use when a view is shown. -->
+        <attr name="inAnimationHorizontal" format="reference" />
+        <!-- Identifier for the animation to use when a view is hidden. -->
+        <attr name="outAnimationHorizontal" format="reference" />
+        <!-- Defines whether to animate the current View when the ViewAnimation
+             is first displayed. -->
+        <attr name="animateFirstViewHorizontal" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="AdapterViewAnimatorHorizontal">
+
+        <attr name="stackViewStyleHorizontal" format="reference" />
+
+        <!-- Identifier for the animation to use when a view is shown. -->
+        <attr name="inAnimationHorizontal" />
+        <!-- Identifier for the animation to use when a view is hidden. -->
+        <attr name="outAnimationHorizontal" />
+        <!--Defines whether the animator loops to the first view once it
+        has reached the end of the list. -->
+        <attr name="loopViewsHorizontal" format="boolean" />
+        <!-- Defines whether to animate the current View when the ViewAnimation
+        is first displayed. -->
+        <attr name="animateFirstViewHorizontal" />
+    </declare-styleable>
+
+    <declare-styleable name="StackViewHorizontal">
+        <!-- Color of the res-out outline. -->
+        <attr name="resOutColorHorizontal" format="color" />
+        <!-- Color of the outline of click feedback. -->
+        <attr name="clickColorHorizontal" format="color" />
+    </declare-styleable>
+</resources>

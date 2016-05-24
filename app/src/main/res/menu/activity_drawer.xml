@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_camera"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="All Stories" />
+        <item
+            android:id="@+id/nav_gallery"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="Most Liked Stories" />
+        <item
+            android:id="@+id/nav_cat"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="Categories" />
+        <item
+            android:id="@+id/nav_about"
+            android:icon="@drawable/info"
+            android:title="About" />
+    </group>
+
+
+    <item android:title="Profile">
+        <menu>
+
+            <item
+                android:id="@+id/nav_ResetPass"
+                android:icon="@drawable/ic_pass"
+                android:title="Reset Password" />
+            <item
+                android:id="@+id/nav_ForgetPass"
+                android:icon="@drawable/ic_for_pass"
+                android:title="Forget Password" />
+            <item
+                android:id="@+id/nav_SignOut"
+                android:icon="@drawable/log_out_blcak"
+                android:title="Sign Out" />
+        </menu>
+    </item>
+
+</menu>

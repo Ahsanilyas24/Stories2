@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/activity_discription"
+    tools:context="com.technologies.gimick.stories.activities.DiscriptionActivity">
+
+    <ImageView
+        android:id="@+id/iv_MainImage"
+        android:layout_width="130dip"
+        android:layout_height="130dip"
+        android:scaleType="fitCenter"
+        android:src="@mipmap/ic_launcher"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:layout_below="@+id/iv_MainImage"
+        android:text="About Flip Magazine"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:textColor="@color/blue"
+        android:textSize="30dp"
+        android:textStyle="italic|bold"
+        android:id="@+id/tvto"
+        android:layout_centerHorizontal="true"
+        ></TextView>
+    <TextView
+        android:text="Read and Share stories you love"
+        android:layout_below="@+id/tvto"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:textColor="@color/blue"
+        android:textSize="20dp"
+        android:textStyle="italic"
+        android:id="@+id/tvflip"
+        android:layout_centerHorizontal="true"
+        ></TextView>
+
+    <TextView
+        android:layout_marginTop="15dp"
+        android:text="What is it?"
+        android:layout_below="@+id/tvflip"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:textColor="@color/blue"
+        android:textSize="30dp"
+        android:textStyle="bold|italic"
+        android:id="@+id/tvwhat"
+
+        ></TextView>
+
+    <TextView
+        android:layout_marginTop="15dp"
+        android:text="* This application provides interactive flip feature"
+        android:layout_below="@+id/tvwhat"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:textColor="@color/blue"
+        android:textSize="20dp"
+        android:id="@+id/tvdisc1"
+
+        ></TextView>
+    <TextView
+        android:text="* It provides different stories with categories like. Politics, Sports, Weather etc."
+        android:layout_below="@+id/tvdisc1"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:textColor="@color/blue"
+        android:textSize="20dp"
+        android:id="@+id/tvdisc2"
+
+        ></TextView>
+    <TextView
+        android:text="* User can read and share any story to social media site such as facebook and twitter."
+        android:layout_below="@+id/tvdisc2"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:textColor="@color/blue"
+        android:textSize="20dp"
+        android:id="@+id/tvdisc3"
+
+        ></TextView>
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/blue"
+        android:text="Next"
+        android:textColor="@color/white"
+        android:textSize="25dp"
+        android:textStyle="italic"
+        android:id="@+id/btndiscr"
+        android:layout_alignParentBottom="true"/>
+
+</RelativeLayout>

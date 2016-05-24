@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.technologies.gimick.stories.activities.StoriesActivity"
+    tools:showIn="@layout/activity_stories">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+
+        <com.technologies.gimick.stories.uiviews.StackViewVertical
+            android:id="@+id/stackView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingBottom="5dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:paddingTop="5dp" />
+
+        <RelativeLayout
+            android:id="@+id/rlTut"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/black__transparent"
+            android:visibility="invisible">
+
+            <ImageView
+                android:id="@+id/ivHand"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:scaleType="fitCenter"
+                android:src="@drawable/gesture_hand" />
+
+            <ImageView
+                android:id="@+id/ivLeft"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/ivHand"
+                android:layout_toLeftOf="@+id/ivHand"
+                android:layout_toStartOf="@+id/ivHand"
+                android:src="@drawable/arrow_left" />
+
+            <ImageView
+                android:id="@+id/ivRight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/ivHand"
+                android:layout_toEndOf="@+id/ivHand"
+                android:layout_toRightOf="@+id/ivHand"
+                android:src="@drawable/arrow_right" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ivRight"
+                android:layout_toEndOf="@+id/ivHand"
+                android:layout_toRightOf="@+id/ivHand"
+                android:text="Swipe Right for Previous Story"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ivRight"
+                android:layout_toLeftOf="@+id/ivHand"
+                android:layout_toStartOf="@+id/ivHand"
+                android:gravity="right"
+                android:paddingLeft="10dp"
+                android:text="Swipe Left for Next Story"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/btnGotIt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:text="Got It!" />
+
+            <ImageView
+                android:id="@+id/ivhandDown"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="70dp"
+                android:layout_marginRight="20dp"
+                android:src="@drawable/hand_down" />
+
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/ivhandDown"
+                android:layout_toLeftOf="@+id/ivhandDown"
+                android:layout_toStartOf="@+id/ivhandDown"
+                android:text="Click + button to share and like the story!"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+
+        </RelativeLayout>
+
+
+    </FrameLayout>
+
+</layout>
